@@ -1,0 +1,55 @@
+.services{
+  height: 100vh;
+}
+
+.services h2{
+  font-size: 3rem;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+
+  }
+  .service-card {
+    flex: 0 0 calc(17.3333% - 10px);
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .service-card:hover {
+    transform: translateY(-5px); /* Lift card slightly on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  .service-image {
+    max-width: 100%;
+    height: auto;
+    filter: blur(0);
+    transition: filter 0.3s;
+  }
+  .service-card:hover .service-image {
+    filter: blur(5px); /* Apply blur effect on image when card is hovered */
+
+}
+  .service-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #151414;
+    font-weight: bold;
+    font-size: 1.2rem;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  .service-card:hover .service-text {
+    opacity: 1; /* Show text on hover */
+  }

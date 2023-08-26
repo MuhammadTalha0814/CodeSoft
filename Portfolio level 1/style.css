@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background: linear-gradient(to right, #2980b9, #2c3e50); 
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  .intro {
+    margin-bottom: 20px;
+  }
+  .about {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f7f7f7;
+  }
+
+  .about-image {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .about-image img {
+    max-width: 80%;
+    height: auto;
+    padding-left: 40px;
+    border-radius: 0px 0px 70px 100px;
+  }
+  .about-content {
+    max-width: 100%;
+    text-align: center;
+  }
+  .skills {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .skillsection
+  {
+    background-color: #f0f0f0;
+    padding: 20px 20px;
+  }
+  .skill-item {
+    margin-bottom: 15px;
+  }
+  .skill-label {
+    font-weight: bold;
+  }
+  .skill-bar {
+    width: 50%;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 5px;
+  }
+  .skill-fill {
+    height: 100%;
+    border-radius: 5px;
+    background: linear-gradient(to right, #0984e3, #6c5ce7);
+  }
+  .projects {
+    padding: 40px 20px;
+  }
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-image: linear-gradient(to right, #f3f3f4 50%, transparent 50%); /* Set initial background gradient */
+    background-size: 200% 100%; /* Double the width of the background to accommodate the sliding effect */
+    transition: background-position 0.5s ease;
+  }
+  .project-card-content {
+    padding: 20px;
+  }
+  .project-card img {
+    max-width: 100%;
+    height: auto;
+    padding-left: 27%;
+  }
+  @media (min-width: 768px) {
+    .project-card {
+      flex-direction: row;
+    }
+    .project-card-content {
+      flex: 1;
+      padding: 20px;
+    }
+    .project-card img {
+      flex: 1;
+      float: right ;
+    }
+  }
+  .contact {
+    background: linear-gradient(to right, #2c3e50, #2980b9); /* Gradient colors */
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .footer {
+    background: linear-gradient(to right, #2c3e50, #2980b9); /* Gradient colors */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Responsive CSS */
+  @media (min-width: 768px) {
+    .about {
+      flex-direction: row;
+    }
+    .about-image {
+      max-width: 30%;
+      margin-right: 0px;
+    }
+    .about-content {
+      max-width: 70%;
+      text-align: left;
+    }
+  }
+  .abouthead
+  {
+    font-size: 50px;
+  }
+  .para
+  {
+    font-weight: bold;
+    color: #143955;
+    font-size: 25px;
+    text-align: justify;
+  }
+  .para:hover
+  {
+    /* text-decoration:underline; */
+    color: #12578c;
+    transform: scale(1.01);
+    transition: 0.3s ease-in-out, transform 0.3s;
+    font-weight: bold;
+  }
+
+  .resume {
+    background-color: #f7f7f7;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .resume a {
+    display: inline-block;
+    /* background-color: #0984e3; */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #007bff 50%, transparent 50%); /* Set initial background gradient */
+    background-size: 200% 100%; /* Double the width of the background to accommodate the sliding effect */
+    transition: background-position 0.5s ease; /* Add a transition for smooth effect */
+  }
+  .resume a:hover{
+    background-position: -100% 0; /* Slide the background to the right on hover */
+    background-color: white;
+    color: #007bff; /* Change the text color to white on hover */
+  }
+
+  img:hover{
+    transform: scale(1.01);
+    transition: 0.3s ease-in-out, transform 0.3s;
+  }
+  .image1
+  {
+    transition: 0.8s ease-in-out, transform 0.8s;
+  }
+  .image1:hover{
+    transform: scale(1.01);
+  }
+
+  .project-card:hover{
+    background-position: -100% 0; /* Slide the background to the right on hover */
+    background-color: white;
+    color: #007bff;
+
+  }

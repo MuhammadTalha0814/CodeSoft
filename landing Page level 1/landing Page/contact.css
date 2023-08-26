@@ -1,0 +1,81 @@
+.contact-container {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    justify-content: space-between;
+    padding: 60px 20px;
+    background-color: #d4d1d1;
+    border-radius: 12px;
+  }
+  .contact-form {
+    flex: 1;
+    padding-right: 20px;
+  }
+  .contact-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+  }
+  .contact-info {
+    flex: 1;
+    padding-left: 100px;
+    position: relative;
+  }
+  .contact-info h2 {
+    margin-bottom: 20px;
+  }
+  .contact-info p {
+    margin-bottom: 10px;
+  }
+  .contact-container h2{
+    font-size: 2rem;
+  }
+  .contact-info strong{
+    font-size: 1.2rem;
+  }
+  .vertical-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 5px;
+    background-color: #575758;
+    margin-left: 45px;
+    height: 300px;
+  }
+
+  button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+.contact-info a{
+  text-decoration: none;
+  color: #000;
+}
+
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column; /* Stack the items vertically on small screens */
+    }
+    .vertical-line {
+        display: none; /* Hide the vertical line on smaller screens */
+      }
+    .contact-info{
+        padding-left: 0;
+    }
+  }

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page with Navbar and Logo</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="cardboxes.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="ourservices.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        /* ... existing styles ... */
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar" id="myNavbar">
+                <a href="#" class="menu-icon" onclick="toggleNavbar()">&#9776;</a>
+                <a href="#" class="logo"><img src="bird-colorful-logo-gradient-vector_343694-1365.png"
+                        style="width: 50px;" alt="Logo"></a>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="slider">
+        <div class="slides">
+            <div class="slide">
+                <img src="sliderimages/slide1.jpg" alt="Slide 1">
+                <div class="slide-content">
+                    <h1>Welcome to My Landing Page</h1>
+                    <p>I am a Professional Web Designer</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="sliderimages/slide2.jpg" alt="Slide 2">
+                <div class="slide-content">
+                    <h1>Slide 2</h1>
+                    <p>This is the second slide content.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="sliderimages/slide3.jpg" alt="Slide 3">
+                <div class="slide-content">
+                    <h1>Slide 3</h1>
+                    <p>This is the third slide content.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <img src="cardboximages/launchicon.png" alt="Launch Icon">
+            <h3>Launch</h3>
+            <p>Discover new opportunities and launch your ideas.</p>
+        </div>
+        <div class="card">
+            <img src="cardboximages/businessicon.png" alt="Business Icon">
+            <h3>Business</h3>
+            <p>Grow your business with strategic planning.</p>
+        </div>
+        <div class="card">
+            <img src="cardboximages/teamicon.png" alt="Team Icon">
+            <h3>Team Management</h3>
+            <p>Effectively manage your team for success.</p>
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="about-container">
+            <div class="about-content">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra sapien ut dolor consequat, vel
+                    posuere arcu viverra.</p>
+                <p>Nulla facilisi. Vestibulum cursus, libero at malesuada porttitor, erat nunc placerat metus, at
+                    consectetur tortor arcu nec est.</p>
+            </div>
+            <div class="about-image">
+                <img src="IMG_20230128_125355_546-removebg-preview.png" alt="About Us Image">
+            </div>
+        </div>
+    </div>
+
+    <div class="services">
+        <h2 style="text-align: center;">Our Services</h2>
+        <div class="services-container">
+    
+            <div class="service-card">
+                <img class="service-image" src="serviceimages/one.png" alt="Service 1">
+                <div class="service-text">Care</div>
+            </div>
+            <div class="service-card">
+                <img class="service-image" src="serviceimages/two.png" alt="Service 2">
+                <div class="service-text">Maintenance</div>
+            </div>
+            <div class="service-card">
+                <img class="service-image" src="serviceimages/three-removebg-preview.png" alt="Service 3">
+                <div class="service-text">Support</div>
+            </div>
+    
+        </div>
+    </div>
+
+
+    <div class="contact-container">
+        <div class="contact-form">
+          <h2>Contact Us</h2>
+          <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        </div>
+        <div class="contact-info">
+            <div class="vertical-line"></div> <!-- Vertical line -->
+            <h2>Contact Information</h2>
+            <p><strong>Email: </strong><a href="mailto:muhammad14702@gmail.com">muhammad14702@gmail.com</a></p>
+            <p><strong>Contact Number: </strong>+92 308925274</p>
+          </div>
+      </div>
+
+      <footer class="footer">
+        &copy; 2023 Your Company Name. All rights reserved.
+      </footer>
+
+
+
+
+    <script>
+        function toggleNavbar() {
+            var navbar = document.getElementById("myNavbar");
+            if (navbar.className === "navbar") {
+                navbar.className += " responsive";
+            } else {
+                navbar.className = "navbar";
+            }
+        }
+
+        const slides = document.querySelector('.slides');
+        let slideIndex = 0;
+
+        function showSlide(index) {
+            slides.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        function nextSlide() {
+            slideIndex = (slideIndex + 1) % 3; // Change '3' to the total number of slides
+            showSlide(slideIndex);
+        }
+
+        setInterval(nextSlide, 3000); // Change '3000' to the interval in milliseconds
+
+    </script>
+</body>
+
+</html>

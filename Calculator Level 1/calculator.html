@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <title>Calculator</title>
+    <style>
+        .btn {
+            width: 10%;
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .btn:hover {
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<script>
+    function getvalue(val) {
+
+        document.getElementById('inputID').value += val;
+    }
+    function clearval() {
+        var text = document.getElementById("inputID");
+        text.value = '';
+    }
+    function getans() {
+        try {
+            let result = eval(document.getElementById('inputID').value);
+            document.getElementById('inputID').value = result;
+        } catch (error) {
+            document.getElementById('inputID').value = 'Error';
+        }
+    }
+    function squarefunc() {
+        let result = document.getElementById('inputID').value;
+
+        let i = 0;
+        let flag = 1;
+        for (i; i < result.length; i++) {
+            if (result[i] == '+' || result[i] == '-' || result[i] == '*' || result[i] == '/') {
+                flag = 0;
+                break
+            }
+        }
+        if (flag == 1) {
+            document.getElementById('inputID').value = result * result;
+        }
+        else {
+            document.getElementById('inputID').value = 'Error';
+        }
+    }
+    function squareroot() {
+        let result = document.getElementById('inputID').value;
+
+        let i = 0;
+        let flag = 1;
+        for (i; i < result.length; i++) {
+            if (result[i] == '+' || result[i] == '-' || result[i] == '*' || result[i] == '/') {
+                flag = 0;
+                break
+            }
+        }
+        if (flag == 1) {
+            document.getElementById('inputID').value = Math.sqrt(result);
+        }
+        else {
+            document.getElementById('inputID').value = 'Error';
+        }
+    }
+    function lastchardel() {
+        let currentResult = document.getElementById('inputID').value;
+        document.getElementById('inputID').value = currentResult.slice(0, -1);
+    }
+</script>
+
+<body>
+    <h2 class="text-center mb-4" style="margin-left: 4%;">JavaScript Calculator</h2>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-2">
+                <div class="card text-center" style="width: 250px; background-color: aliceblue;">
+                    <div class="card-body">
+
+                        <input type="text" class="form-control mb-2" style="width: 100%;" id="inputID" readonly>
+
+                        <button class="btn btn-primary mb-1" style="width: 23%;" onclick="squarefunc()">x
+                            <sup>2</sup></button>
+                        <button class="btn btn-primary mb-1" style="width: 23%;" onclick="squareroot()">√</button>
+                        <button class="btn btn-primary mb-1 "
+                            style="width: 23%; background-color: red; border-color: red;"
+                            onclick="clearval()">C</button>
+                        <button class="btn btn-dark mb-1" style="width: 23%; border-radius: 60% 0px 0px 60%;"
+                            onclick="lastchardel()">X</button>
+
+
+                        <br>
+                        <button class="btn btn-primary mb-1" style="width: 23%;" id="seven"
+                            onclick="getvalue(7)">7</button>
+                        <button class="btn btn-primary mb-1" style="width: 23%;" onclick="getvalue(8)">8</button>
+                        <button class="btn btn-primary mb-1" style="width: 23%;" onclick="getvalue(9)">9</button>
+                        <button class="btn btn-primary mb-1"
+                            style="width: 23%; background-color: green; border-color: green;"
+                            onclick="getvalue('/')">/</button>
+                        <br>
+                        <button class="btn btn-primary mb-1" style="width: 23%;" onclick="getvalue(4)">4</button>
+                        <button class="btn btn-primary mb-1" style="width: 23%;" onclick="getvalue(5)">5</button>
+                        <button class="btn btn-primary mb-1" style="width: 23%;" onclick="getvalue(6)">6</button>
+                        <button class="btn btn-primary mb-1"
+                            style="width: 23%; background-color: green; border-color: green;"
+                            onclick="getvalue('*')">*</button>
+                        <br>
+                        <button class="btn btn-primary mb-1" style="width: 23%;" onclick="getvalue(1)">1</button>
+                        <button class="btn btn-primary mb-1" style="width: 23%;" onclick="getvalue(2)">2</button>
+                        <button class="btn btn-primary mb-1" style="width: 23%;" onclick="getvalue(3)">3</button>
+                        <button class="btn btn-primary mb-1"
+                            style="width: 23%; background-color: green; border-color: green;"
+                            onclick="getvalue('-')">-</button>
+                        <br>
+                        <button class="btn btn-primary mb-1" style="width: 23%;" onclick="getvalue(0)">0</button>
+                        <button class="btn btn-primary mb-1" style="width: 23%;" onclick="getvalue('.')">.</button>
+                        <button class="btn btn-primary mb-1" style="width: 23%; background-color: purple;"
+                            onclick="getans()">=</button>
+                        <button class="btn btn-primary mb-1"
+                            style="width: 23%; background-color: green; border-color: green;"
+                            onclick="getvalue('+')">+</button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
