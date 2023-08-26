@@ -1,0 +1,260 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: Raleway, sans-serif;
+}
+body {
+	/* background: linear-gradient(90deg, #C7C5F4, #776BCC); */
+    background-color: #fff;
+}
+#customnavbar
+{
+    background: linear-gradient(270deg, #5D54A4, #6A679E);
+   
+    
+}
+#navbarlinks
+{
+    color: #C7C5F4;
+    font-weight: 700;
+}
+marquee
+{
+    color: #3b3691;
+    font-weight: 700;
+    font-weight: bolder;
+}
+#navbarddlinks
+{
+ 
+    color: #3b3691;
+    font-weight: 700;
+    border-radius: 20px;
+    
+}
+#dropdown-dividers
+{
+    
+    border-color: #C7C5F4;
+}
+.buttonsubmit
+{
+    background: #fff;
+	font-size: 14px;
+	margin-top: 30px;
+	padding: 16px 20px;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	color: #4C489D;
+	box-shadow: 0px 2px 2px #5C5696;
+	cursor: pointer;
+	transition: .2s;
+}
+.services
+{
+    
+	color: #3b3691;
+	font-size: 25px;
+	padding-top: 44px;
+	
+	text-align: center;
+    font-weight: bold;
+    
+}
+.fspan {
+    display: inline-flex;
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    border: 1px solid #ffffff15;
+    font-size: 0.9rem;
+    margin: 0px 5px;
+    transition: all ease 0.3s;
+}
+.fspan:hover {
+    background-color: #888585;
+    transition: all ease 0.3s;
+}
+
+.fottera {
+    display: inline-flex;
+    text-decoration: none;
+    color: #C7C5F4;
+    transition: all ease 0.3s;
+}
+
+.fottera:hover {
+    color: white;
+    transition: all ease 0.3s;
+}
+.tabs__input {
+	border: none;
+	border-bottom: 2px solid #D1D1D4;
+	background: none;
+	padding: 10px;
+	padding-left: 24px;
+	font-weight: 700;
+	width: 300px;
+	transition: .2s;
+    color: #7875B5;
+}
+
+
+.textdesign
+{
+    color: #3b3691;
+}
+
+
+.login {
+	width: 320px;
+	padding: 30px;
+	padding-top: 20px;
+}
+
+.login__field {
+	padding: 20px 0px;
+	position: relative;
+    
+}
+
+.login__icon {
+	position: absolute;
+	top: 30px;
+	color: #7875B5;
+}
+
+.login__input {
+	border: none;
+	border-bottom: 2px solid #D1D1D4;
+	background: none;
+	padding: 10px;
+	padding-left: 24px;
+	font-weight: 700;
+	width: 200px;
+	transition: .2s;
+}
+
+.login__input:active,
+.login__input:focus,
+.login__input:hover {
+	outline: none;
+	border-bottom-color: #6A679E;
+}
+
+.login__submit {
+	background: #fff;
+	font-size: 14px;
+	margin-top: 30px;
+	padding: 16px 20px;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	color: #4C489D;
+	box-shadow: 0px 2px 2px #5C5696;
+	cursor: pointer;
+	transition: .2s;
+}
+
+.login__submit:active,
+.login__submit:focus,
+.login__submit:hover {
+	border-color: #6A679E;
+	outline: none;
+}
+
+.button__icon {
+	font-size: 24px;
+	margin-left: auto;
+	color: #7875B5;
+}
+
+.social-login {
+
+	width: 317px;
+	bottom: 0px;
+	right: 0px;
+	color: #3b3691;
+	font-size: 25px;
+	padding-top: 44px;
+	font-weight: 700;
+	text-align: center;
+    font-weight: bold;
+    padding-left: 66px;
+}
+
+.social-icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-login__icon {
+	padding: 20px 10px;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 0px 0px 8px #7875B5;
+}
+
+.signup {
+	margin: 8vh 0vh 5vh 12vh;
+	color: #fff;
+	text-align: center;
+}
+
+#signuplink {
+	text-decoration: none;
+	color: #3b3691;
+	font-size: 15px;
+}
+
+.genderselecttext
+{
+    color: #6f6f85;
+}
+select option {
+    
+    
+    color: #000
+    
+  }
+  
+  select option[value="1"] {
+    background:#6C63AC;
+    color: #fff;
+  }
+  
+  select option[value="2"] {
+    background:#6C63AC;
+    color: #fff;
+  }
+  
+  select option[value="3"] {
+    background:#6C63AC;
+    color: #fff;
+  }
+  h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 1000;
+    line-height: 1.2;
+    
+}
+
+::placeholder {
+    color: #7875B5;
+   
+  }

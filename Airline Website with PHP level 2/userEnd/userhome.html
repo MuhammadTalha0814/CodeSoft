@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="signuppage.css"> -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../userhomecss.css">
+
+    <title>Home</title>
+</head>
+
+<body>
+    <div>
+        <nav class="navbar  navbar-expand-lg navbar-dark bg-dark" id="customnavbar">
+            <a class="navbar-brand" href="#">
+                <img src="../airlinelogo.png" alt="" width="50" height="10%" style="border-radius: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto w-75">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="userhome.html" id="navbarlinks">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            style="color: #C7C5F4; font-weight: 700;">
+                            About Us
+                        </a>
+                        <div class="dropdown-menu" style="border-radius: 30px;" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="aboutservices.html" id="navbarddlinks">Our Services</a>
+                            <div class="dropdown-divider" id="dropdown-dividers"></div>
+                            <a class="dropdown-item" href="aboutgoal.html" id="navbarddlinks">Our Goals</a>
+                            <div class="dropdown-divider" id="dropdown-dividers"></div>
+                            <a class="dropdown-item" href="aboutacheive.html" id="navbarddlinks">Acheivements</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html" id="navbarlinks">Contact Us</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            style="color: #C7C5F4; font-weight: 700;">
+                            Flights
+                        </a>
+                        <div class="dropdown-menu" style="border-radius: 30px;" aria-labelledby="navbarDropdown1">
+                            <a class="dropdown-item" href="allflights.html" id="navbarddlinks">View All Flights</a>
+                            <div class="dropdown-divider" id="dropdown-dividers"></div>
+                            <a class="dropdown-item" href="bookticket.html" id="navbarddlinks">Book Your Ticket</a>
+                        </div>
+                    </li>
+
+                </ul>
+
+
+            </div>
+
+            <div class="nav-item dropdown dropleft" style="margin-bottom: 80px; margin-right: 60px; width: 10%;">
+                <a class="nav-link" href="#" id="accountdropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false" style="color: #C7C5F4; font-weight: 700; float: right;">
+                    <i class="login__icon fa fa-user" style="font-size:50px;"></i>
+                </a>
+                <div class="dropdown-menu " style="border-radius: 30px; margin-top: 60px; margin-right: 10px;"
+                    aria-labelledby="accountdropdown">
+                    <a class="dropdown-item" href="login.html" id="navbarddlinks">Login</a>
+                    <div class="dropdown-divider" id="dropdown-dividers"></div>
+                    <a class="dropdown-item" href="signup.html" id="navbarddlinks">Sign Up</a>
+
+                </div>
+            </div>
+
+
+        </nav>
+
+    </div>
+
+    <div class="container-fluid" style="overflow: hidden;">
+        <marquee width="100%" direction="left" height="40%">
+            This is a sample scrolling text that has scrolls texts to left.
+        </marquee>
+    </div>
+
+
+    <div class="container-fluid">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="margin-top: 1rem;">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+
+            </ol>
+            <div class="carousel-inner " style="border-radius: 18px;">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="../c1.jpg" alt="First slide" />
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../c4.jpg" alt="Second slide" />
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../c6.jpg" alt="Second slide" />
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../c7.jpg" alt="Second slide" />
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../c8.jpg" alt="Second slide" />
+                </div>
+
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+
+
+
+    <ul class="nav nav-tabs justify-content-center container-fluid mt-4" style="border-color:#C7C5F4;">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#fl" style="color: #3b3691;font-weight: 700;">Flight
+                Schedule</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#st" style="color: #3b3691;font-weight: 700;">Status</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#bf" style="color: #3b3691;font-weight: 700;">Booking</a>
+        </li>
+
+    </ul>
+
+    <div class="row container-fluid justify-content-center ">
+
+
+
+        <div>
+
+            <div class="tab-content justify-content-center">
+
+
+                <div class="tab-pane in active " id="fl">
+
+                    <form action="checkschedule.html">
+
+                        <div class="login__field">
+                            <i class="login__icon fa fa-calendar"></i>
+                            <input type="date" class="tabs__input" style="color: #7875B5;">
+                        </div>
+
+                        <div class="login__field">
+                            <i class="login__icon fa fa-plane"></i>
+                            <select class="tabs__input genderselecttext" style="color: #7875B5;">
+                                <option selected disabled>---Departure---</option>
+                                <option value="1">Pakistan</option>
+                                <option value="2">Saudia Arabia</option>
+                                <option value="3">Malaysia</option>
+                            </select>
+                        </div>
+
+                        <div class="login__field">
+                            <i class="login__icon fa fa-plane"></i>
+                            <select class="tabs__input genderselecttext" style="color: #7875B5;">
+                                <option selected disabled>---Destination---</option>
+                                <option value="1">Pakistan</option>
+                                <option value="2">Saudia Arabia</option>
+                                <option value="3">Malaysia</option>
+                            </select>
+                        </div>
+
+                        <button class="button buttonsubmit">
+                            <span class="button__text">Check Schedule</span>
+                            <i class="button__icon fa fa-chevron-right"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="tab-pane fade" id="st">
+
+                    <form action="checkStatus.html">
+
+                        <div class="login__field">
+                            <i class="login__icon fa fa-calendar"></i>
+                            <input type="date" class="tabs__input" style="color: #7875B5;">
+                        </div>
+
+                        <div class="login__field">
+                            <i class="login__icon fa fa-plane"></i>
+                            <select class="tabs__input genderselecttext" style="color: #7875B5;">
+                                <option selected disabled>---Departure---</option>
+                                <option value="1">Pakistan</option>
+                                <option value="2">Saudia Arabia</option>
+                                <option value="3">Malaysia</option>
+                            </select>
+                        </div>
+
+                        <div class="login__field">
+                            <i class="login__icon fa fa-plane"></i>
+                            <select class="tabs__input genderselecttext" style="color: #7875B5;">
+                                <option selected disabled>---Destination---</option>
+                                <option value="1">Pakistan</option>
+                                <option value="2">Saudia Arabia</option>
+                                <option value="3">Malaysia</option>
+                            </select>
+                        </div>
+                        <div class="login__field" style="color: #7875B5;">
+                            <i class="login__icon fa fa-calendar"></i>
+                            <input type="text" placeholder="Flight#" class="tabs__input" style="color: #7875B5;">
+                        </div>
+                        <button class="button buttonsubmit">
+                            <span class="button__text">Check Status</span>
+                            <i class="button__icon fa fa-chevron-right"></i>
+                        </button>
+                    </form>
+
+                </div>
+
+                <div class="tab-pane fade" id="bf">
+                    <form action="findbooking.html">
+
+                        <div class="login__field">
+                            <i class="login__icon fa fa-book"></i>
+                            <input type="text" placeholder="Passport Number" class="tabs__input"
+                                style="color: #7875B5;">
+                        </div>
+                        <div class="login__field">
+                            <i class="login__icon fa fa-id-card"></i>
+                            <input type="text" placeholder="CNIC" class="tabs__input" style="color: #7875B5;">
+                        </div>
+
+                        <button class="button buttonsubmit">
+                            <span class="button__text">Find Booking</span>
+                            <i class="button__icon fa fa-chevron-right"></i>
+                        </button>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="container-fluid">
+        <h2 class="services">
+            Our Services
+        </h2>
+        <p style="text-align: justify; max-width: 100%; color: #3b3691; ">
+            Safety Goals and Objectives inspire teamwork and communicate important milestones to the organization.
+
+            Collaborations among organizational members need goals and objectives in order to be effective. Clear,
+            motivating goals provide collaboration members with a sense of opportunity, challenge and consequence, and
+            give the collaboration a sense of purpose.
+
+            In essence, goals and objectives allow members to understand and participate in what the collaboration is
+            doing. They are most effective when written down and agreed upon. Furthermore, everyone in the organization
+            must know what these goals and objectives seek to achieve.
+
+            The Goals & Objectives module places company goals and objectives within the reach of everyone. Furthermore,
+            users can see real-time progress toward achieving company objectives.
+        </p>
+
+        <img src="https://images.pexels.com/photos/13078167/pexels-photo-13078167.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            style="display: block; margin-left: auto; margin-right: auto; width: 70%; height:80vh; border-radius:18px ;"
+            alt="economy class">
+
+        <p style="text-align: justify; max-width: 100%; color: #3b3691; margin-top: 40px;">
+            THAI offers more than expected of an Economy Class experience, with a spacious cabin, award-winning service
+            and cuisine. THAI continues to evolve, developing and upgrading products and services to assure that
+            travellers needs are not only met but surpassed. THAI is renowned as one of the best in the business having
+            claimed the 2018 Skytrax Worlds Best Economy Class, Best Economy Class Onboard Catering, Best Cabin Crew in
+            Thailand and Best Economy Class in Asia.
+        </p>
+
+    </div>
+
+    <div class="container-fluid">
+        <h2 class="services">Our Goals</h2>
+        <p style="text-align: justify; max-width: 100%; color: #3b3691;">
+            Safety Goals and Objectives inspire teamwork and communicate important milestones to the organization.
+
+            Collaborations among organizational members need goals and objectives in order to be effective. Clear,
+            motivating goals provide collaboration members with a sense of opportunity, challenge and consequence, and
+            give the collaboration a sense of purpose.
+
+            In essence, goals and objectives allow members to understand and participate in what the collaboration is
+            doing. They are most effective when written down and agreed upon. Furthermore, everyone in the organization
+            must know what these goals and objectives seek to achieve.
+
+            The Goals & Objectives module places company goals and objectives within the reach of everyone. Furthermore,
+            users can see real-time progress toward achieving company objectives.
+
+            <br><br>
+            Key safety goals and objectives reviewed regularly are very important for successfully implementing aviation
+            safety management systems. Your safety objectives are the small steps you take toward achieving your goals,
+            i.e., the successful aviation SMS program. Safety goals define what your airline, airport, MRO, FBO or
+            flight school hopes to accomplish by implementing the aviation safety management system (SMS).
+
+            <br><br>
+            Safety objectives are the smaller steps the organization hopes to accomplish while striving to accomplish
+            its safety goals. Safety goals and objectives should be published in a public, easily accessible location so
+            all employees understand what your company is attempting to accomplish by taking all this time and energy
+            implementing the aviation SMS program.
+            <br><br>
+            Setting goals and objectives is not a "do it once and forget it" exercise. You should always be mindful of
+            identifying goals and objectives that will help identify hazards and discover solutions to mitigate,
+            transfer or control the associated risk. While you may be mindful of these safety goals and objectives that
+            are tied to your aviation SMS program, another task safety managers have is to continually keep these safety
+            goals and objectives at the forefront of the employees and stakeholders.
+            <br><br>
+            Using sound risk management strategies will help safety managers determine where the most salient hazards
+            exist. Hazard identification, risk mitigation or control and communicating these hazards and risk to the
+            organization is tied closely to your goals and objectives.
+
+        </p>
+
+
+    </div>
+
+    <footer class="text-lg-start text-white bg-black" id="customnavbar"
+        style="position: absolute; width: 100%; margin-top: 29.5vh;">
+        <div class="container-fluid p-4">
+            <div class="row mt-4">
+                <div class="col-lg-4 col-md-4 text-center">
+                    <h5 class="text-capitalize">Company Name</h5>
+                    <div class="container-fluid">
+                        <a class="fspan"><i class="fa fa-facebook-f"></i></a>
+                        <a class="fspan"><i class="fa fa-twitter"></i></a>
+                        <a class="fspan"><i class="fa fa-instagram"></i></a>
+                        <a class="fspan"><i class="fa fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 justify-content-start">
+                    <h5 class="text-capitalize">Services We Provide</h5>
+                    <ul class="nav-item">
+                        <li class="nav-link"><a class="fottera" href="">Flight Schedule</a></li>
+                        <li class="nav-link"><a class="fottera" href="">Flight Status</a></li>
+                        <li class="nav-link"><a class="fottera" href="">Flight Booking</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="text-capitalize">Contact Info</h5>
+                    <ul class="nav-item">
+                        <li class="nav-link"><a class="fottera" href="tel: 03088925274">Contact: +92 308 8925274</a></li>
+                        <li class="nav-link"><a class="fottera" href="mailto:mtstyle@gmail.com">Email: mtstyle@gmail.com</a></li>
+                    </ul>
+                    <div class="container-fluid p-3">
+                        © 2023 Copyright
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
